@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestor de Contraseñas</title>
+</head>
+<body id="body" class="body">
+
+    <div class="welcome">
+        <h1>Gestor de Contraseñas</h1>
+    </div>
+
+    <div id="dashboard" class="dashboard">
+        <div class="top">
+            <div class="add-pass">
+                <h2>Añade una contraseña</h2>
+                <form id="addPassForm" class="form">
+                    <input autocomplete="off" maxlength="15" required class="plat-input" type="text" name="platform" id="platform" placeholder="Plataforma">
+                    <input autocomplete="off" required class="pass-input" type="text" name="password" id="password" placeholder="Contraseña">
+                    <button class="add-pass-button" type="submit">Agregar</button>
+                </form>
+            </div>
+
+            <div class="basic-settings">
+                <h2>Preferencias</h2>
+                <button class="darkmode">Modo Oscuro:</button>
+            </div>
+        </div>
+        <div class="pass-container">
+            <div class="pass-container-title">
+                <h2>Mis Contraseñas</h2>
+                <div class="guide">
+                    <h5>Plataforma</h5>
+                    <h5>Contraseña</h5>
+                    <h5>Eliminar</h5>
+                </div>
+                <div class="passwords" id="Passwords">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
